@@ -47,65 +47,65 @@ print(meuCarro.getModelo())
 //-Cada boné custa 50 reais, e para cada 2 bonés vendidos, o terceiro é grátis, logo não haverá lucro.
 
 
-class Vendedor{
+class Seller{
     
-     private var nome: String = "Mario"
-     private var idade: Int = 21
-     private var cpf: Int = 44184923000
-    private var saldo: Double = 1000.0
+     private var name: String = "Mario"
+     private var age: Int = 21
+     private var id: Int = 44184923000
+    private var bankBalance: Double = 1000.0
     
-    public func vender(quantidadeDePecas: Int, tipoDePeca: String){
-        if(tipoDePeca == "Terno"){
-            vendasTerno(quantidadeDePecas2: quantidadeDePecas)
-        }else if(tipoDePeca == "Vestido"){
-            vendasVestido(quantidadeDePecas1: quantidadeDePecas)
-        }else if(tipoDePeca == "Boné"){
-            vendasBone(quantidadeDePecas3: quantidadeDePecas)
+    public func sell(amount: Int, type: String){
+        if(type == "Suit"){
+            suitsSold(amountSuits: amount)
+        }else if(type == "Dress"){
+            dressesSold(amountDresses: amount)
+        }else if(type == "Cap"){
+            capsSold(amountCap: amount)
         }else{
-            print("Algo deu errado...")
+            print("Something went wrong...")
         }
     }
-    private func vendasVestido(quantidadeDePecas1: Int){
-        if quantidadeDePecas1 >= 5{
-            print("Ganhou um véu de noiva!")
-            saldo = saldo + Double(quantidadeDePecas1) * 900.0
-        }else if quantidadeDePecas1 >= 1{
-            saldo = saldo + Double(quantidadeDePecas1) * 900.0
-        }else{
-            print("Algo deu errado...")
-        }
-    }
-    private func vendasTerno(quantidadeDePecas2: Int) {
-        if quantidadeDePecas2 >= 3{
-            saldo = saldo + Double(quantidadeDePecas2) * 350.0
-        }else if quantidadeDePecas2 >= 1{
-            saldo = saldo + Double(quantidadeDePecas2) * 400.0
+    private func suitsSold(amountSuits: Int) {
+        if amountSuits >= 3{
+            bankBalance = bankBalance + Double(amountSuits) * 350.0
+        }else if amountSuits >= 1{
+            bankBalance = bankBalance + Double(amountSuits) * 400.0
         }else {
-            print("Algo deu errado...")
+            print("Something went wrong...")
         }
     }
-    private func vendasBone(quantidadeDePecas3: Int){
-        if(quantidadeDePecas3/3 >= 1){
-            saldo = saldo + Double(quantidadeDePecas3 - (quantidadeDePecas3/3)) * 50.0
-        }else if (quantidadeDePecas3 >= 1){
-            saldo = saldo + Double(quantidadeDePecas3) * 50.0
+    private func dressesSold(amountDresses: Int){
+        if amountDresses >= 5{
+            print("You won a wedding veil!")
+            bankBalance = bankBalance + Double(amountDresses) * 900.0
+        }else if amountDresses >= 1{
+            bankBalance = bankBalance + Double(amountDresses) * 900.0
         }else{
-            print("Algo deu errado...")
+            print("Something went wrong...")
         }
     }
-    public func getSaldo() -> Double{
-        return saldo
+    private func capsSold(amountCap: Int){
+        if(amountCap/3 >= 1){
+            bankBalance = bankBalance + Double(amountCap - (amountCap/3)) * 50.0
+        }else if (amountCap >= 1){
+            bankBalance = bankBalance + Double(amountCap) * 50.0
+        }else{
+            print("Something went wrong...")
+        }
+    }
+    public func getbankBalance() -> Double{
+        return bankBalance
         
     }
 }
 
-var mario: Vendedor = Vendedor()
+var mario: Seller = Seller()
 
-mario.vender(quantidadeDePecas: 5, tipoDePeca: "Terno")
-print(mario.getSaldo())
-mario.vender(quantidadeDePecas: 2, tipoDePeca: "Terno")
-print(mario.getSaldo())
-mario.vender(quantidadeDePecas: 5, tipoDePeca: "Vestido")
-print(mario.getSaldo())
-mario.vender(quantidadeDePecas: 9, tipoDePeca: "Boné")
-print(mario.getSaldo())
+mario.sell(amount: 5, type: "Suit")
+print(mario.getbankBalance())
+mario.sell(amount: 2, type: "Suit")
+print(mario.getbankBalance())
+mario.sell(amount: 5, type: "Dress")
+print(mario.getbankBalance())
+mario.sell(amount: 9, type: "Cap")
+print(mario.getbankBalance())
