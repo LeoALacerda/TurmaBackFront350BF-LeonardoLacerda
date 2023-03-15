@@ -43,7 +43,7 @@ class Employee{
         self.id = id
     }
     func bonus(){
-        print("Sem bonus")
+        print("No bonus for you...")
     }
 }
 
@@ -56,8 +56,7 @@ class Developer: Employee{
     }
     
     override func bonus(){
-        var bonus: Double = 0.2 * salary
-        print("Bonus: $\(bonus)")
+        print("Bonus: $\(0.2 * salary)")
     }
 }
 
@@ -70,8 +69,7 @@ class Designer: Employee{
     }
     
     override func bonus() {
-        var bonus: Double = 0.15 * salary
-        print("Bonus: $\(bonus)")
+        print("Bonus: $\(0.15 * salary)")
     }
 }
 
