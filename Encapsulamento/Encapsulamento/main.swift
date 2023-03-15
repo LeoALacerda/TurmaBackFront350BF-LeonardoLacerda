@@ -13,7 +13,7 @@ import Foundation
 // Publico -> público, que tenha acesso externo
 
 class Carro{
-    private var  modelo: String
+    private var modelo: String
 
     init(modelo: String) {
         self.modelo = modelo
@@ -49,9 +49,9 @@ print(meuCarro.getModelo())
 
 class Seller{
     
-     private var name: String = "Mario"
-     private var age: Int = 21
-     private var id: Int = 44184923000
+    private var name: String = "Mario"
+    private var age: Int = 21
+    private var id: Int = 44184923000
     private var bankBalance: Double = 1000.0
     
     public func sell(amount: Int, type: String){
@@ -93,19 +93,16 @@ class Seller{
             print("Something went wrong...")
         }
     }
-    public func getbankBalance() -> Double{
+    public func getBankBalance() -> Double{
         return bankBalance
-        
     }
 }
-
 var mario: Seller = Seller()
-
 mario.sell(amount: 5, type: "Suit")
-print(mario.getbankBalance())
+print(mario.getBankBalance())
 mario.sell(amount: 2, type: "Suit")
-print(mario.getbankBalance())
+print(mario.getBankBalance())
 mario.sell(amount: 5, type: "Dress")
-print(mario.getbankBalance())
+print(mario.getBankBalance())
 mario.sell(amount: 9, type: "Cap")
-print(mario.getbankBalance())
+print(mario.getBankBalance())
