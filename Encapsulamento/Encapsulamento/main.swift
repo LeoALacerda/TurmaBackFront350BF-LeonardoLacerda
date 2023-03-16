@@ -49,10 +49,17 @@ print(meuCarro.getModelo())
 
 class Seller{
     
-    private var name: String = "Mario"
-    private var age: Int = 21
-    private var id: Int = 44184923000
-    private var bankBalance: Double = 1000.0
+    private var name: String
+    private var age: Int
+    private var id: String
+    private var bankBalance: Double
+    
+    init(name: String, age: Int, id: String, bankBalance: Double) {
+        self.name = name
+        self.age = age
+        self.id = id
+        self.bankBalance = bankBalance
+    }
     
     public func sell(amount: Int, type: String){
         if(type == "Suit"){
@@ -62,42 +69,36 @@ class Seller{
         }else if(type == "Cap"){
             capsSold(amountCap: amount)
         }else{
-            print("Something went wrong...")
+            print("We don't sell this product...")
         }
     }
     private func suitsSold(amountSuits: Int) {
         if amountSuits >= 3{
             bankBalance = bankBalance + Double(amountSuits) * 350.0
-        }else if amountSuits >= 1{
+        }else{
             bankBalance = bankBalance + Double(amountSuits) * 400.0
-        }else {
-            print("Something went wrong...")
         }
     }
     private func dressesSold(amountDresses: Int){
-        if amountDresses >= 5{
-            print("You won a wedding veil!")
-            bankBalance = bankBalance + Double(amountDresses) * 900.0
-        }else if amountDresses >= 1{
-            bankBalance = bankBalance + Double(amountDresses) * 900.0
-        }else{
-            print("Something went wrong...")
+        bankBalance = bankBalance + Double(amountDresses) * 900.0
+        if amountDresses == 5{
+            print("Congratulations! You won a wedding veil!")
         }
+        
     }
+        
     private func capsSold(amountCap: Int){
         if(amountCap/3 >= 1){
             bankBalance = bankBalance + Double(amountCap - (amountCap/3)) * 50.0
-        }else if (amountCap >= 1){
-            bankBalance = bankBalance + Double(amountCap) * 50.0
         }else{
-            print("Something went wrong...")
+            bankBalance = bankBalance + Double(amountCap) * 50.0
         }
     }
     public func getBankBalance() -> Double{
         return bankBalance
     }
 }
-var mario: Seller = Seller()
+var mario: Seller = Seller(name: "Mario", age: 21, id: "441.222.343-66", bankBalance: 1000)
 mario.sell(amount: 5, type: "Suit")
 print(mario.getBankBalance())
 mario.sell(amount: 2, type: "Suit")
