@@ -35,9 +35,9 @@ print(lojaDoBruno.totalDeDesconto(valorTotal: 1000))
 class Employee{
     var name: String
     var salary: Double
-    var id: Int
+    var id: String
     
-    init(name: String, salary: Double, id: Int) {
+    init(name: String, salary: Double, id: String) {
         self.name = name
         self.salary = salary
         self.id = id
@@ -50,34 +50,34 @@ class Employee{
 class Developer: Employee{
     var os: String
     
-    init(os: String, name: String, salary: Double, id: Int) {
+    init(os: String, name: String, salary: Double, id: String) {
         self.os = os
         super.init(name: name, salary: salary, id: id)
     }
     
     override func bonus(){
-        print("Bonus: $\(0.2 * salary)")
+        print("You got a 20% Bonus: $\(0.2 * 12 * salary)")
     }
 }
 
 class Designer: Employee{
     var tool: String
     
-    init(tool: String, name: String, salary: Double, id: Int) {
+    init(tool: String, name: String, salary: Double, id: String) {
         self.tool = tool
         super.init(name: name, salary: salary, id: id)
     }
     
     override func bonus() {
-        print("Bonus: $\(0.15 * salary)")
+        print("You got a 15% Bonus: $\(0.15 * 12 * salary)")
     }
 }
 
-var me: Developer = Developer(os: "iOS", name: "Leo", salary: 1000, id: 44268344441)
+var me: Developer = Developer(os: "iOS", name: "Leo", salary: 15000, id: "442.683.444-41")
 me.bonus()
-var me2: Designer = Designer(tool: "Photoshop", name: "Leo2", salary: 1000, id: 231321312323)
+var me2: Designer = Designer(tool: "Photoshop", name: "Leo2", salary: 15000, id: "113.442.232-00")
 me2.bonus()
-var me3: Employee = Employee(name: "Leo3", salary: 1000, id: 23232132424)
+var me3: Employee = Employee(name: "Leo3", salary: 15000, id: "234.234.343-22")
 me3.bonus()
 
 
@@ -102,15 +102,15 @@ class Vehicle{
 }
 
 class Car: Vehicle{
-    var tireSize: Double
+    var tireSize: Int
     
-    init(tireSize: Double, color: String, price: Double, passengers: Int) {
+    init(tireSize: Int, color: String, price: Double, passengers: Int) {
         self.tireSize = tireSize
         super.init(color: color, price: price, passengers: passengers)
     }
     
     override func fuelCalculator(distanceKM: Double){
-        print ("Consumed Fuel: \(tireSize * Double(passengers) * distanceKM)L")
+        print ("Consumed Fuel: \(Double(tireSize) * Double(passengers) * distanceKM)L")
     }
 }
 
