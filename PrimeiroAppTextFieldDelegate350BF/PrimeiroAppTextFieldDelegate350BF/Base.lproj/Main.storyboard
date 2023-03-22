@@ -17,20 +17,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sZ1-Bv-KSl">
-                                <rect key="frame" x="20" y="79" width="353" height="34"/>
+                                <rect key="frame" x="20" y="99" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X2J-Sh-AEg">
+                                <rect key="frame" x="20" y="153" width="353" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="sZ1-Bv-KSl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="L9A-XG-Rx5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X2J-Sh-AEg" secondAttribute="trailing" constant="20" id="D9w-Pv-wdV"/>
+                            <constraint firstItem="sZ1-Bv-KSl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="L9A-XG-Rx5"/>
+                            <constraint firstItem="X2J-Sh-AEg" firstAttribute="top" secondItem="sZ1-Bv-KSl" secondAttribute="bottom" constant="20" id="T3e-FS-Jsj"/>
                             <constraint firstItem="sZ1-Bv-KSl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VGu-7e-qbc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sZ1-Bv-KSl" secondAttribute="trailing" constant="20" id="lwz-oE-cB1"/>
+                            <constraint firstItem="X2J-Sh-AEg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="t1b-Gz-oWo"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="X2J-Sh-AEg" id="ReS-Ul-WPj"/>
                         <outlet property="nameTextField" destination="sZ1-Bv-KSl" id="pjZ-sH-PAw"/>
                     </connections>
                 </viewController>
@@ -40,8 +49,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
