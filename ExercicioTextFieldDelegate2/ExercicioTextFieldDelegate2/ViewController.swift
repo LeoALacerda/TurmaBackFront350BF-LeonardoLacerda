@@ -33,6 +33,17 @@ class ViewController: UIViewController {
         passwordTextField.delegate = self
         confirmPasswordTextField.delegate = self
         signUpButton.isEnabled = false
+        nameTextField.layer.borderWidth = 2
+        nameTextField.layer.borderColor = UIColor.lightGray.cgColor
+        addressTextField.layer.borderWidth = 2
+        addressTextField.layer.borderColor = UIColor.lightGray.cgColor
+        passwordTextField.layer.borderWidth = 2
+        passwordTextField.layer.borderColor = UIColor.lightGray.cgColor
+        passwordTextField.isSecureTextEntry = true
+        confirmPasswordTextField.layer.borderWidth = 2
+        confirmPasswordTextField.layer.borderColor = UIColor.lightGray.cgColor
+        confirmPasswordTextField.isSecureTextEntry = true
+        hideKeyboardWhenTappedAround()
     }
     
     
@@ -45,11 +56,10 @@ class ViewController: UIViewController {
 
 extension ViewController: UITextFieldDelegate{
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        textField.layer.borderWidth = 2
         textField.layer.borderColor = UIColor.blue.cgColor
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
-        if textField.hasText == false{
+        if !textField.hasText{
             textField.layer.borderColor = UIColor.red.cgColor
         }else{
             textField.layer.borderColor = UIColor.lightGray.cgColor
@@ -63,11 +73,19 @@ extension ViewController: UITextFieldDelegate{
                 confirmPasswordTextField.layer.borderColor = UIColor.red.cgColor
             }
         }
-        if (nameTextField.hasText == true && addressTextField.hasText == true && passwordTextField.hasText == true && confirmPasswordTextField.hasText == true && passwordTextField.text == confirmPasswordTextField.text) {
+        if (nameTextField.hasText && addressTextField.hasText && passwordTextField.hasText && confirmPasswordTextField.hasText && passwordTextField.text == confirmPasswordTextField.text) {
             signUpButton.isEnabled = true
         }
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if let text = textField.text as? NSString{
+            let updateText = text.replacingCharacters(in: range, with: string)
+            print (updateText)
+        }
+        return true
     }
 }

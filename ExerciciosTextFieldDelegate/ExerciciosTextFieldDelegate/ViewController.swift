@@ -32,7 +32,14 @@ class ViewController: UIViewController {
         nameTextField.delegate = self
         addressTextField.delegate = self
         passwordTextField.delegate = self
+        nameTextField.layer.borderWidth = 2
+        nameTextField.layer.borderColor = UIColor.lightGray.cgColor
+        addressTextField.layer.borderWidth = 2
+        addressTextField.layer.borderColor = UIColor.lightGray.cgColor
+        passwordTextField.layer.borderWidth = 2
+        passwordTextField.layer.borderColor = UIColor.lightGray.cgColor
         signUpButton.isEnabled = false
+        hideKeyboardWhenTappedAround()
     }
     
     @IBAction func tappedSignUpButton(_ sender: UIButton) {
@@ -43,16 +50,17 @@ class ViewController: UIViewController {
 extension ViewController: UITextFieldDelegate{
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        textField.layer.borderWidth = 2
         textField.layer.borderColor = UIColor.blue.cgColor
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
-        if textField.hasText == false{
+        // esse de baixo é igual  if textField.hasText == false
+        if !textField.hasText{
             textField.layer.borderColor = UIColor.red.cgColor
         }else{
             textField.layer.borderColor = UIColor.lightGray.cgColor
         }
-        if nameTextField.hasText == true && addressTextField.hasText == true && passwordTextField.hasText == true{
+        // if nameTextField.hasText == true && ...
+        if nameTextField.hasText && addressTextField.hasText && passwordTextField.hasText{
             signUpButton.isEnabled = true
             }
     }
