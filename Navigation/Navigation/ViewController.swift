@@ -7,6 +7,8 @@
 
 import UIKit
 
+// MARK: - O PRESENT ele tem a apresentação de um MODAL
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -15,7 +17,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func tappedButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "Tela02", sender: nil)
+        let vc: Tela02ViewController? = UIStoryboard(name: "Tela02ViewController", bundle: nil).instantiateViewController(withIdentifier: "Tela02ViewController") as? Tela02ViewController
+        //vc?.modalPresentationStyle = .fullScreen
+        present(vc ?? UIViewController(), animated: true)
     }
     
     @IBAction func tappedButton2(_ sender: UIButton) {

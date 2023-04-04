@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Tela03: UIViewController {
+class Tela03ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,7 +15,10 @@ class Tela03: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func tappedBackButton(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
