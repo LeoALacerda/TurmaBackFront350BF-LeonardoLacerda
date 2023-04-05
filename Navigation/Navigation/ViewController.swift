@@ -23,7 +23,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tappedButton2(_ sender: UIButton) {
-        performSegue(withIdentifier: "show03", sender: nil)
+        let vc: Tela03ViewController? = UIStoryboard(name: "Tela03ViewController", bundle: nil).instantiateViewController(withIdentifier: "Tela03ViewController") as? Tela03ViewController
+        //vc?.modalPresentationStyle = .fullScreen
+        navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
+        
     }
     
     
