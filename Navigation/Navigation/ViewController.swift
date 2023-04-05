@@ -8,12 +8,20 @@
 import UIKit
 
 // MARK: - O PRESENT ele tem a apresentação de um MODAL
+// MARK: - O Dismiss ele abaixa (volta) a tela quando a exibição é um MODAL
+
+// MARK: - O navigationController?.pushViewController ele tem a apresentacao de uma NATIGATION
+// MARK: - O popViewController ele volta a tela quando a exibição é uma navigation!
 
 class ViewController: UIViewController {
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        //title = "Meu primeiro" -> de maneira programatica
     }
 
     @IBAction func tappedButton(_ sender: UIButton) {
