@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kl-E2-aEX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fV6-hN-UYf">
                                 <rect key="frame" x="175.66666666666666" y="415.66666666666669" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -26,17 +26,17 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                         <constraints>
-                            <constraint firstItem="4kl-E2-aEX" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="0Vu-SM-e8t"/>
-                            <constraint firstItem="4kl-E2-aEX" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="mQl-ch-Cn9"/>
+                            <constraint firstItem="fV6-hN-UYf" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="awQ-sc-Cjm"/>
+                            <constraint firstItem="fV6-hN-UYf" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="rQZ-mI-jSV"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="nameLabel" destination="4kl-E2-aEX" id="d0o-Aj-vjI"/>
+                        <outlet property="nameLabel" destination="fV6-hN-UYf" id="W6s-QY-ent"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48" y="-2"/>
+            <point key="canvasLocation" x="100" y="-2"/>
         </scene>
     </scenes>
     <resources>

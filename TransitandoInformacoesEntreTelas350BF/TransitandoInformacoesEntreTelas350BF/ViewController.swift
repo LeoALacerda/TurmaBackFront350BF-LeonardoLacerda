@@ -16,12 +16,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func tappedShowTela02Button(_ sender: UIButton) {
-        let vc: Tela02ViewController? = UIStoryboard(name: "Tela02ViewController", bundle: nil).instantiateViewController(identifier: "Tela02ViewController") { coder -> Tela02ViewController in
-            return Tela02ViewController(coder: coder, name: self.nameTextField.text ?? " ")
-        }
+        let vc: Tela02ViewController? = UIStoryboard(name: "Tela02ViewController", bundle: nil).instantiateViewController(withIdentifier: "Tela02ViewController") as? Tela02ViewController
         vc?.modalPresentationStyle = .formSheet
+        vc?.name = nameTextField.text ?? ""
         present(vc ?? UIViewController(), animated: true)
     }
 }
