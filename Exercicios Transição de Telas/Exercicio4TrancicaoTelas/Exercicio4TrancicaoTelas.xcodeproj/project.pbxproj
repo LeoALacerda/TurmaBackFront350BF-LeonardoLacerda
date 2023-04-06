@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B125FADE29DF3E5600C7F387 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B125FADD29DF3E5600C7F387 /* AppDelegate.swift */; };
+		B125FAE029DF3E5600C7F387 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B125FADF29DF3E5600C7F387 /* SceneDelegate.swift */; };
+		B125FAE229DF3E5600C7F387 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B125FAE129DF3E5600C7F387 /* ViewController.swift */; };
+		B125FAE529DF3E5600C7F387 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B125FAE329DF3E5600C7F387 /* Main.storyboard */; };
+		B125FAE729DF3E5C00C7F387 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B125FAE629DF3E5C00C7F387 /* Assets.xcassets */; };
+		B125FAEA29DF3E5D00C7F387 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B125FAE829DF3E5D00C7F387 /* LaunchScreen.storyboard */; };
+		B12D2A2229DF5105002AA4C0 /* ForgotPasswordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12D2A2129DF5105002AA4C0 /* ForgotPasswordViewController.storyboard */; };
+		B12D2A2429DF5112002AA4C0 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12D2A2329DF5112002AA4C0 /* ForgotPasswordViewController.swift */; };
+		B12D2A2729DF6405002AA4C0 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12D2A2629DF6405002AA4C0 /* HomeViewController.storyboard */; };
+		B12D2A2929DF6412002AA4C0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12D2A2829DF6412002AA4C0 /* HomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B125FADA29DF3E5600C7F387 /* Exercicio4TrancicaoTelas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercicio4TrancicaoTelas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B125FADD29DF3E5600C7F387 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B125FADF29DF3E5600C7F387 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B125FAE129DF3E5600C7F387 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B125FAE429DF3E5600C7F387 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B125FAE629DF3E5C00C7F387 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B125FAE929DF3E5D00C7F387 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B125FAEB29DF3E5D00C7F387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B12D2A2129DF5105002AA4C0 /* ForgotPasswordViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPasswordViewController.storyboard; sourceTree = "<group>"; };
+		B12D2A2329DF5112002AA4C0 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		B12D2A2629DF6405002AA4C0 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		B12D2A2829DF6412002AA4C0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B125FAD729DF3E5600C7F387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B125FAD129DF3E5600C7F387 = {
+			isa = PBXGroup;
+			children = (
+				B125FADC29DF3E5600C7F387 /* Exercicio4TrancicaoTelas */,
+				B125FADB29DF3E5600C7F387 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B125FADB29DF3E5600C7F387 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B125FADA29DF3E5600C7F387 /* Exercicio4TrancicaoTelas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B125FADC29DF3E5600C7F387 /* Exercicio4TrancicaoTelas */ = {
+			isa = PBXGroup;
+			children = (
+				B12D2A2529DF63E9002AA4C0 /* HomeViewController */,
+				B12D2A1E29DF50CB002AA4C0 /* ForgotPasswordViewController */,
+				B125FADD29DF3E5600C7F387 /* AppDelegate.swift */,
+				B125FADF29DF3E5600C7F387 /* SceneDelegate.swift */,
+				B125FAE129DF3E5600C7F387 /* ViewController.swift */,
+				B125FAE329DF3E5600C7F387 /* Main.storyboard */,
+				B125FAE629DF3E5C00C7F387 /* Assets.xcassets */,
+				B125FAE829DF3E5D00C7F387 /* LaunchScreen.storyboard */,
+				B125FAEB29DF3E5D00C7F387 /* Info.plist */,
+			);
+			path = Exercicio4TrancicaoTelas;
+			sourceTree = "<group>";
+		};
+		B12D2A1E29DF50CB002AA4C0 /* ForgotPasswordViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B12D2A2129DF5105002AA4C0 /* ForgotPasswordViewController.storyboard */,
+				B12D2A2329DF5112002AA4C0 /* ForgotPasswordViewController.swift */,
+			);
+			path = ForgotPasswordViewController;
+			sourceTree = "<group>";
+		};
+		B12D2A2529DF63E9002AA4C0 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B12D2A2629DF6405002AA4C0 /* HomeViewController.storyboard */,
+				B12D2A2829DF6412002AA4C0 /* HomeViewController.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B125FAD929DF3E5600C7F387 /* Exercicio4TrancicaoTelas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B125FAEE29DF3E5D00C7F387 /* Build configuration list for PBXNativeTarget "Exercicio4TrancicaoTelas" */;
+			buildPhases = (
+				B125FAD629DF3E5600C7F387 /* Sources */,
+				B125FAD729DF3E5600C7F387 /* Frameworks */,
+				B125FAD829DF3E5600C7F387 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercicio4TrancicaoTelas;
+			productName = Exercicio4TrancicaoTelas;
+			productReference = B125FADA29DF3E5600C7F387 /* Exercicio4TrancicaoTelas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B125FAD229DF3E5600C7F387 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B125FAD929DF3E5600C7F387 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = B125FAD529DF3E5600C7F387 /* Build configuration list for PBXProject "Exercicio4TrancicaoTelas" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B125FAD129DF3E5600C7F387;
+			productRefGroup = B125FADB29DF3E5600C7F387 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B125FAD929DF3E5600C7F387 /* Exercicio4TrancicaoTelas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B125FAD829DF3E5600C7F387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12D2A2729DF6405002AA4C0 /* HomeViewController.storyboard in Resources */,
+				B125FAEA29DF3E5D00C7F387 /* LaunchScreen.storyboard in Resources */,
+				B12D2A2229DF5105002AA4C0 /* ForgotPasswordViewController.storyboard in Resources */,
+				B125FAE729DF3E5C00C7F387 /* Assets.xcassets in Resources */,
+				B125FAE529DF3E5600C7F387 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B125FAD629DF3E5600C7F387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12D2A2929DF6412002AA4C0 /* HomeViewController.swift in Sources */,
+				B12D2A2429DF5112002AA4C0 /* ForgotPasswordViewController.swift in Sources */,
+				B125FAE229DF3E5600C7F387 /* ViewController.swift in Sources */,
+				B125FADE29DF3E5600C7F387 /* AppDelegate.swift in Sources */,
+				B125FAE029DF3E5600C7F387 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B125FAE329DF3E5600C7F387 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B125FAE429DF3E5600C7F387 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B125FAE829DF3E5D00C7F387 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B125FAE929DF3E5D00C7F387 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B125FAEC29DF3E5D00C7F387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B125FAED29DF3E5D00C7F387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B125FAEF29DF3E5D00C7F387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZJ6WN3W475;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Exercicio4TrancicaoTelas/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Leo-Lacerda.Exercicio4TrancicaoTelas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B125FAF029DF3E5D00C7F387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZJ6WN3W475;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Exercicio4TrancicaoTelas/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Leo-Lacerda.Exercicio4TrancicaoTelas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B125FAD529DF3E5600C7F387 /* Build configuration list for PBXProject "Exercicio4TrancicaoTelas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B125FAEC29DF3E5D00C7F387 /* Debug */,
+				B125FAED29DF3E5D00C7F387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B125FAEE29DF3E5D00C7F387 /* Build configuration list for PBXNativeTarget "Exercicio4TrancicaoTelas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B125FAEF29DF3E5D00C7F387 /* Debug */,
+				B125FAF029DF3E5D00C7F387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B125FAD229DF3E5600C7F387 /* Project object */;
+}
