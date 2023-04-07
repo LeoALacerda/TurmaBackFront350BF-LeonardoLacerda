@@ -14,8 +14,18 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var passwordLabel: UILabel!
     
-    var email: String = ""
-    var senha: String = ""
+    var email: String
+    var senha: String
+    
+    required init?(coder: NSCoder, mail: String, password: String) {
+        self.email = mail
+        self.senha = password
+        super.init(coder: coder)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

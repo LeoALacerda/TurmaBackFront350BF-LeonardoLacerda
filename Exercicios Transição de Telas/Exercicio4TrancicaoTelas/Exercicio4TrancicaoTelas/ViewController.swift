@@ -22,10 +22,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var forgotPasswordButton: UIButton!
     
     @IBOutlet weak var loginButton: UIButton!
-
-    
-    var email: String = ""
-    var senha: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,8 +47,6 @@ class ViewController: UIViewController {
     
     @IBAction func tappedForgotPasswordButton(_ sender: UIButton) {
         
-        email = emailTextField.text ?? ""
-        
         let vc: ForgotPasswordViewController? = UIStoryboard(name: "ForgotPasswordViewController", bundle: nil).instantiateViewController(identifier: "ForgotPasswordViewController", creator: { coder -> ForgotPasswordViewController? in
             return ForgotPasswordViewController(coder: coder, name: self.emailTextField.text ?? "")
             
@@ -64,14 +58,11 @@ class ViewController: UIViewController {
     @IBAction func tappedLoginButton(_ sender: UIButton) {
         
         if emailTextField.hasText == true && passwordTextField.hasText == true{
-            email = emailTextField.text ?? ""
-            senha = passwordTextField.text ?? ""
-            let vc: HomeViewController? = UIStoryboard(name: "HomeViewController", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController
-            vc?.email = email
-            vc?.senha = senha
+            let vc: HomeViewController? = UIStoryboard(name: "HomeViewController", bundle: nil).instantiateViewController(identifier: "HomeViewController", creator: {coder -> HomeViewController? in
+                return HomeViewController(coder: coder, mail: self.emailTextField.text ?? "", password: self.passwordTextField.text ?? "")
+            })
             navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
         }
-        
     }
 }
 
