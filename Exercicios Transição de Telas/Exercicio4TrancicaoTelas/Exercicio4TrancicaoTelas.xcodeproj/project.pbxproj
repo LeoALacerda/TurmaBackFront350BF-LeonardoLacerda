@@ -13,10 +13,10 @@
 		B125FAE529DF3E5600C7F387 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B125FAE329DF3E5600C7F387 /* Main.storyboard */; };
 		B125FAE729DF3E5C00C7F387 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B125FAE629DF3E5C00C7F387 /* Assets.xcassets */; };
 		B125FAEA29DF3E5D00C7F387 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B125FAE829DF3E5D00C7F387 /* LaunchScreen.storyboard */; };
-		B12D2A2229DF5105002AA4C0 /* ForgotPasswordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12D2A2129DF5105002AA4C0 /* ForgotPasswordViewController.storyboard */; };
-		B12D2A2429DF5112002AA4C0 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12D2A2329DF5112002AA4C0 /* ForgotPasswordViewController.swift */; };
 		B12D2A2729DF6405002AA4C0 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12D2A2629DF6405002AA4C0 /* HomeViewController.storyboard */; };
 		B12D2A2929DF6412002AA4C0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12D2A2829DF6412002AA4C0 /* HomeViewController.swift */; };
+		B1A34E2C29DF8EB3006FD928 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A34E2B29DF8EB3006FD928 /* ForgotPasswordViewController.swift */; };
+		B1A34E2E29DF8EDB006FD928 /* ForgotPasswordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1A34E2D29DF8EDB006FD928 /* ForgotPasswordViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		B125FAE629DF3E5C00C7F387 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B125FAE929DF3E5D00C7F387 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B125FAEB29DF3E5D00C7F387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B12D2A2129DF5105002AA4C0 /* ForgotPasswordViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPasswordViewController.storyboard; sourceTree = "<group>"; };
-		B12D2A2329DF5112002AA4C0 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		B12D2A2629DF6405002AA4C0 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		B12D2A2829DF6412002AA4C0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B1A34E2B29DF8EB3006FD928 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		B1A34E2D29DF8EDB006FD928 /* ForgotPasswordViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPasswordViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +80,8 @@
 		B12D2A1E29DF50CB002AA4C0 /* ForgotPasswordViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B12D2A2129DF5105002AA4C0 /* ForgotPasswordViewController.storyboard */,
-				B12D2A2329DF5112002AA4C0 /* ForgotPasswordViewController.swift */,
+				B1A34E2B29DF8EB3006FD928 /* ForgotPasswordViewController.swift */,
+				B1A34E2D29DF8EDB006FD928 /* ForgotPasswordViewController.storyboard */,
 			);
 			path = ForgotPasswordViewController;
 			sourceTree = "<group>";
@@ -155,7 +155,7 @@
 			files = (
 				B12D2A2729DF6405002AA4C0 /* HomeViewController.storyboard in Resources */,
 				B125FAEA29DF3E5D00C7F387 /* LaunchScreen.storyboard in Resources */,
-				B12D2A2229DF5105002AA4C0 /* ForgotPasswordViewController.storyboard in Resources */,
+				B1A34E2E29DF8EDB006FD928 /* ForgotPasswordViewController.storyboard in Resources */,
 				B125FAE729DF3E5C00C7F387 /* Assets.xcassets in Resources */,
 				B125FAE529DF3E5600C7F387 /* Main.storyboard in Resources */,
 			);
@@ -169,7 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B12D2A2929DF6412002AA4C0 /* HomeViewController.swift in Sources */,
-				B12D2A2429DF5112002AA4C0 /* ForgotPasswordViewController.swift in Sources */,
+				B1A34E2C29DF8EB3006FD928 /* ForgotPasswordViewController.swift in Sources */,
 				B125FAE229DF3E5600C7F387 /* ViewController.swift in Sources */,
 				B125FADE29DF3E5600C7F387 /* AppDelegate.swift in Sources */,
 				B125FAE029DF3E5600C7F387 /* SceneDelegate.swift in Sources */,

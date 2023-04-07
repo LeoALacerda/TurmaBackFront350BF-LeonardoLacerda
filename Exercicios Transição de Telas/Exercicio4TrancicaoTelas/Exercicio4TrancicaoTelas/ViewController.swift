@@ -53,8 +53,10 @@ class ViewController: UIViewController {
         
         email = emailTextField.text ?? ""
         
-        let vc: ForgotPasswordViewController? = UIStoryboard(name: "ForgotPasswordViewController", bundle: nil).instantiateViewController(withIdentifier: "ForgotPasswordViewController") as? ForgotPasswordViewController
-        vc?.emailForgotPassword = email
+        let vc: ForgotPasswordViewController? = UIStoryboard(name: "ForgotPasswordViewController", bundle: nil).instantiateViewController(identifier: "ForgotPasswordViewController", creator: { coder -> ForgotPasswordViewController? in
+            return ForgotPasswordViewController(coder: coder, name: self.emailTextField.text ?? "")
+            
+        })
         navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
         
     }
