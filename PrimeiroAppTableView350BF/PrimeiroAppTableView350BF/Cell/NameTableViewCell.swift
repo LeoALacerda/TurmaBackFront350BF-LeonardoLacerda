@@ -16,10 +16,6 @@ class NameTableViewCell: UITableViewCell {
     
     @IBOutlet weak var surnameLabel: UILabel!
     
-    static func test(){
-        print(identifier)
-    }
-    
     //static: Significa algo que nao tem nenhuma dependencia externa!
     static let identifier: String = "NameTableViewCell"
     
