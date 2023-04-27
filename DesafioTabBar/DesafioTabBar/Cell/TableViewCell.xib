@@ -16,8 +16,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Pj-lh-SpI">
-                        <rect key="frame" x="15" y="12" width="90" height="90"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9Pj-lh-SpI">
+                        <rect key="frame" x="15" y="13" width="90" height="88.666666666666671"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="90" id="1Ol-Ln-JRk"/>
                             <constraint firstAttribute="width" constant="90" id="nZB-h3-KaD"/>
@@ -45,4 +46,7 @@
             <point key="canvasLocation" x="65.648854961832058" y="45.070422535211272"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="person.circle.fill" catalog="system" width="32" height="32"/>
+    </resources>
 </document>
