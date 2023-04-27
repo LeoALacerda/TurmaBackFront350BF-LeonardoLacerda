@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lFJ-EV-gdO">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="zbh-Y5-GlH">
+            <objects>
+                <viewController id="PAy-Jq-bhT" customClass="Tela03ViewController" customModule="DesafioTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9SP-Lh-IR6">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wlU-xN-6Tn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="fGQ-ZV-Csb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gCC-fn-vtW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-453" y="676"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="Y41-3n-kdG">
+            <objects>
+                <viewController id="bQu-8r-Rru" customClass="Tela02ViewController" customModule="DesafioTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1QG-Yk-0Wg">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ek6-Xs-SDO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="6gv-GA-a9s"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ui8-V1-7vi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448" y="285"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="lar-g4-72p">
+            <objects>
+                <viewController id="ddX-Bu-CZz" customClass="TesteCaioViewController" customModule="DesafioTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dzm-NF-Brq">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7AU-0c-gH7">
+                                <rect key="frame" x="0.0" y="450" width="430" height="399"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUk-ly-KXD">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="450"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="znc-2y-i5B">
+                                        <rect key="frame" x="135" y="80.999999999999986" width="160" height="158.66666666666669"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="Xjd-K8-7cI"/>
+                                            <constraint firstAttribute="height" constant="160" id="bkE-SB-fqv"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8b-XO-3UO">
+                                        <rect key="frame" x="180.66666666666666" y="248" width="69" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="WRc-18-RjM"/>
+                                            <constraint firstAttribute="height" constant="35" id="XPp-AU-Ggi"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Editar"/>
+                                        <connections>
+                                            <action selector="tappedEditButton:" destination="ddX-Bu-CZz" eventType="touchUpInside" id="Z6N-HN-6XP"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pm5-zA-kWf">
+                                        <rect key="frame" x="19.999999999999996" y="310" width="45.666666666666657" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu nome:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="liN-10-as9">
+                                        <rect key="frame" x="15" y="351" width="400" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="name"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMa-ZK-5bp">
+                                        <rect key="frame" x="167" y="400" width="96" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="96" id="Uxa-Lr-woP"/>
+                                            <constraint firstAttribute="height" constant="35" id="eLp-8r-ES2"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Adicionar"/>
+                                        <connections>
+                                            <action selector="tappedAddButton:" destination="ddX-Bu-CZz" eventType="touchUpInside" id="80I-cc-8x2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstItem="pm5-zA-kWf" firstAttribute="top" secondItem="MUk-ly-KXD" secondAttribute="top" constant="310" id="8EH-Xo-5cc"/>
+                                    <constraint firstItem="KMa-ZK-5bp" firstAttribute="centerX" secondItem="MUk-ly-KXD" secondAttribute="centerX" id="8w0-HB-vsy"/>
+                                    <constraint firstItem="d8b-XO-3UO" firstAttribute="top" secondItem="znc-2y-i5B" secondAttribute="bottom" constant="8" symbolic="YES" id="HNm-np-SyZ"/>
+                                    <constraint firstItem="znc-2y-i5B" firstAttribute="top" secondItem="MUk-ly-KXD" secondAttribute="top" constant="80" id="I5A-6P-pKx"/>
+                                    <constraint firstItem="liN-10-as9" firstAttribute="leading" secondItem="MUk-ly-KXD" secondAttribute="leading" constant="15" id="Lwm-QN-EVY"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pm5-zA-kWf" secondAttribute="trailing" constant="20" symbolic="YES" id="M9c-yk-d4v"/>
+                                    <constraint firstItem="KMa-ZK-5bp" firstAttribute="top" secondItem="liN-10-as9" secondAttribute="bottom" constant="15" id="SbV-5r-qJs"/>
+                                    <constraint firstItem="pm5-zA-kWf" firstAttribute="leading" secondItem="MUk-ly-KXD" secondAttribute="leading" constant="20" symbolic="YES" id="U4j-bb-HBC"/>
+                                    <constraint firstItem="liN-10-as9" firstAttribute="top" secondItem="pm5-zA-kWf" secondAttribute="bottom" constant="20" id="Yad-WU-KEH"/>
+                                    <constraint firstItem="d8b-XO-3UO" firstAttribute="centerX" secondItem="MUk-ly-KXD" secondAttribute="centerX" id="bXV-Ct-NsJ"/>
+                                    <constraint firstItem="znc-2y-i5B" firstAttribute="centerX" secondItem="MUk-ly-KXD" secondAttribute="centerX" id="fqg-OK-pHz"/>
+                                    <constraint firstAttribute="trailing" secondItem="liN-10-as9" secondAttribute="trailing" constant="15" id="pWH-Hi-1Jh"/>
+                                    <constraint firstAttribute="height" constant="450" id="vmO-Z3-ipP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UGw-gN-E0P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7AU-0c-gH7" firstAttribute="leading" secondItem="UGw-gN-E0P" secondAttribute="leading" id="BXo-v7-7lD"/>
+                            <constraint firstItem="7AU-0c-gH7" firstAttribute="trailing" secondItem="UGw-gN-E0P" secondAttribute="trailing" id="Ymu-lM-kAQ"/>
+                            <constraint firstItem="UGw-gN-E0P" firstAttribute="trailing" secondItem="MUk-ly-KXD" secondAttribute="trailing" id="g24-Na-BRM"/>
+                            <constraint firstItem="MUk-ly-KXD" firstAttribute="top" secondItem="Dzm-NF-Brq" secondAttribute="top" id="qlc-Y3-f3T"/>
+                            <constraint firstItem="7AU-0c-gH7" firstAttribute="top" secondItem="MUk-ly-KXD" secondAttribute="bottom" id="r4J-Pj-nqe"/>
+                            <constraint firstItem="MUk-ly-KXD" firstAttribute="leading" secondItem="UGw-gN-E0P" secondAttribute="leading" id="uP6-92-2GI"/>
+                            <constraint firstItem="7AU-0c-gH7" firstAttribute="bottom" secondItem="UGw-gN-E0P" secondAttribute="bottom" id="wNO-2g-9Li"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="Inc-O6-uwX"/>
+                    <connections>
+                        <outlet property="addButton" destination="KMa-ZK-5bp" id="SjI-J6-UXs"/>
+                        <outlet property="editButton" destination="d8b-XO-3UO" id="Ig5-8M-YxJ"/>
+                        <outlet property="nameLabel" destination="pm5-zA-kWf" id="1IB-io-Djg"/>
+                        <outlet property="nameTextField" destination="liN-10-as9" id="115-7E-pqC"/>
+                        <outlet property="profileImageView" destination="znc-2y-i5B" id="Gcs-sV-5fN"/>
+                        <outlet property="tableView" destination="7AU-0c-gH7" id="S0n-lx-JTs"/>
+                        <outlet property="testeView" destination="MUk-ly-KXD" id="gKn-sE-Dql"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wfR-Ll-g7Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448.09160305343511" y="-371.12676056338029"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="woL-qj-ums">
+            <objects>
+                <tabBarController id="lFJ-EV-gdO" customClass="TabBarController" customModule="DesafioTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="anj-pb-Cz2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ddX-Bu-CZz" kind="relationship" relationship="viewControllers" id="DPx-MK-QcK"/>
+                        <segue destination="bQu-8r-Rru" kind="relationship" relationship="viewControllers" id="Gjg-IJ-1Zd"/>
+                        <segue destination="PAy-Jq-bhT" kind="relationship" relationship="viewControllers" id="IvP-YK-gvX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="92o-1w-1rh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-459" y="-68"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
