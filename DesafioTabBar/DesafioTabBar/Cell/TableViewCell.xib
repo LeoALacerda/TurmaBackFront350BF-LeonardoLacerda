@@ -47,6 +47,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="person.circle.fill" catalog="system" width="32" height="32"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
     </resources>
 </document>

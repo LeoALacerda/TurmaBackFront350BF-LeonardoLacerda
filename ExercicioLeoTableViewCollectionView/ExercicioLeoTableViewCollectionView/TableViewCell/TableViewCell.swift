@@ -36,9 +36,9 @@ class TableViewCell: UITableViewCell {
         collectionView.register(CollectionViewCell.nib(), forCellWithReuseIdentifier: CollectionViewCell.identifier)
     }
     
-    func setupCell(apps: Apps){
-        categoryLabel.text = apps.category
-        list = apps.list
+    func setupCell(apps: Category){
+        categoryLabel.text = apps.categoryName
+        list = apps.categoryList
     }
     
 }

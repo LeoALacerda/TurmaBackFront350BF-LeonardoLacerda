@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var listApp: [Apps] = [Apps(category: "Games", list: [Application(appTitle: "Angry Birds", appImage: "Angry Birds"),
+    var listApp: [Category] = [Category(categoryName: "Games", categoryList: [Application(appTitle: "Angry Birds", appImage: "Angry Birds"),
                                                           Application(appTitle: "Crossy Road", appImage: "Crossy Road"),
                                                           Application(appTitle: "Cut The Rope", appImage: "Cut The Rope"),
                                                           Application(appTitle: "Fruit Ninja", appImage: "Fruit Ninja"),
@@ -20,14 +20,14 @@ class ViewController: UIViewController {
                                                           Application(appTitle: "Temple Run 2", appImage: "Temple Run 2")
                                                          ]
                                ),
-                           Apps(category: "Developer Tools", list: [Application(appTitle: "Apple Developer", appImage: "Apple Developer"),
+                           Category(categoryName: "Developer Tools", categoryList: [Application(appTitle: "Apple Developer", appImage: "Apple Developer"),
                                                                     Application(appTitle: "TablePlus", appImage: "TablePlus"),
                                                                     Application(appTitle: "TestFlight", appImage: "TestFlight"),
                                                                     Application(appTitle: "WorldWideWeb", appImage: "WorldWideWeb"),
                                                                     Application(appTitle: "Zeitgeist", appImage: "Zeitgeist"),
                                                                    ]
                                ),
-                           Apps(category: "Social NetWorking", list: [Application(appTitle: "Facebook", appImage: "Facebook"),
+                           Category(categoryName: "Social NetWorking", categoryList: [Application(appTitle: "Facebook", appImage: "Facebook"),
                                                                       Application(appTitle: "Instagram", appImage: "Instagram"),
                                                                       Application(appTitle: "TikTok", appImage: "TikTok"),
                                                                       Application(appTitle: "Twitter", appImage: "Twitter"),
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
                                                                       Application(appTitle: "Telegram", appImage: "Telegram")
                                                                      ]
                                ),
-                           Apps(category: "Streamings", list: [Application(appTitle: "Disney+", appImage: "Disney+"),
+                           Category(categoryName: "Streamings", categoryList: [Application(appTitle: "Disney+", appImage: "Disney+"),
                                                                Application(appTitle: "Globoplay", appImage: "Globoplay"),
                                                                Application(appTitle: "HBO Max", appImage: "HBO Max"),
                                                                Application(appTitle: "Netflix", appImage: "Netflix"),
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
                                                                Application(appTitle: "Star+", appImage: "Star+"),
                                                               ]
                                ),
-                           Apps(category: "Navigation", list: [Application(appTitle: "Anchor GPS", appImage: "Anchor GPS"),
+                           Category(categoryName: "Navigation", categoryList: [Application(appTitle: "Anchor GPS", appImage: "Anchor GPS"),
                                                                Application(appTitle: "Apple Maps", appImage: "Apple Maps"),
                                                                Application(appTitle: "Google Maps", appImage: "Google Maps"),
                                                                Application(appTitle: "Waze", appImage: "Waze"),

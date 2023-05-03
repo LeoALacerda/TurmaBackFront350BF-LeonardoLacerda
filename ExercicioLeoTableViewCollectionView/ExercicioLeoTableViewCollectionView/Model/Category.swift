@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Apps{
-    var category: String
-    var list: [Application]
+struct Category{
+    var categoryName: String
+    var categoryList: [Application]
 }

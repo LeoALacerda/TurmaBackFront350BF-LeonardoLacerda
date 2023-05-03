@@ -9,13 +9,14 @@ import UIKit
 
 class TesteCaioViewController: UIViewController {
     
-    @IBOutlet weak var testeView: UIView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var editButton: UIButton!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var addButton: UIButton!
+    
+    let imagePicker: UIImagePickerController = UIImagePickerController()
     
     var viewModel: ViewModel = ViewModel()
     
@@ -30,25 +31,34 @@ class TesteCaioViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(TableViewCell.nib(), forCellReuseIdentifier: TableViewCell.identifier)
-        
-        addButton.isEnabled = false
+        }
+    
+    func configImagePickerController(){
+        imagePicker.delegate = self
     }
     
     @IBAction func tappedEditButton(_ sender: UIButton) {
-        configureImagePicker()
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true)
+        configImagePickerController()
     }
     
     @IBAction func tappedAddButton(_ sender: UIButton) {
-        if profileImageView.image == UIImage(systemName: "person.circle.fill"){
-            viewModel.setProfile(profile: Profile(name: nameTextField.text ?? "", imageName: UIImage(systemName: "person.circle.fill")?.withTintColor(UIColor.black) ?? UIImage()))
-            tableView.reloadData()
-        }else{
+        if let name = nameTextField.text, !name.isEmpty{
             viewModel.setProfile(profile: Profile(name: nameTextField.text ?? "", imageName: profileImageView.image ?? UIImage()))
             tableView.reloadData()
-            profileImageView.image = UIImage(systemName: "person.circle.fill")?.withTintColor(UIColor.black)
+            profileImageView.image = UIImage(systemName: "person.circle.fill")
+            nameTextField.text = ""
+            tableView.scrollToRow(at: IndexPath(row: (viewModel.arrayCount() - 1), section: 0), at: .bottom, animated: true)
+        }else{
+            let alertController = UIAlertController(title: "Ops!", message: "Informe o nome corretamente", preferredStyle: .alert)
+            
+            let okButton = UIAlertAction(title: "OK", style: .default) { action in
+                print("OKkkk")
+            }
+            alertController.addAction(okButton)
+            present(alertController, animated: true)
         }
-        nameTextField.text = ""
-        addButton.isEnabled = false
     }
 }
 
@@ -68,36 +78,19 @@ extension TesteCaioViewController: UITableViewDelegate, UITableViewDataSource{
     }
 }
 
-extension TesteCaioViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
-    
-    func configureImagePicker(){
-        let imagePicker = UIImagePickerController()
-        imagePicker.sourceType = .photoLibrary
-        imagePicker.delegate = self
-        present(imagePicker, animated: true, completion: nil)
-    }
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let editedImage = info[.editedImage] as? UIImage{
-            profileImageView.image = editedImage
-        }else if let originalImage = info[.originalImage] as? UIImage {
-            profileImageView.image = originalImage
-        }
-        picker.dismiss(animated: true, completion: nil)
-    }
-}
-
 extension TesteCaioViewController: UITextFieldDelegate{
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        if textField.hasText{
-            addButton.isEnabled = true
-        }else{
-            addButton.isEnabled = false
-        }
-    }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
     }
 }
 
+extension TesteCaioViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+            profileImageView.image = image
+        }
+        picker.dismiss(animated: true)
+    }
+}

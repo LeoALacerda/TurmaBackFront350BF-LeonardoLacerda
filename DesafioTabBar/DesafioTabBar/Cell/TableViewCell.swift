@@ -20,6 +20,7 @@ class TableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        profileImageView.tintColor = .black
     }
     
     func setupCell(profile: Profile){
