@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1F4F5452A055EE800D7C6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F4F5442A055EE800D7C6A1 /* AppDelegate.swift */; };
+		B1F4F5472A055EE800D7C6A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F4F5462A055EE800D7C6A1 /* SceneDelegate.swift */; };
+		B1F4F5492A055EE800D7C6A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F4F5482A055EE800D7C6A1 /* ViewController.swift */; };
+		B1F4F54C2A055EE800D7C6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1F4F54A2A055EE800D7C6A1 /* Main.storyboard */; };
+		B1F4F54E2A055EEB00D7C6A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1F4F54D2A055EEB00D7C6A1 /* Assets.xcassets */; };
+		B1F4F5512A055EEB00D7C6A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1F4F54F2A055EEB00D7C6A1 /* LaunchScreen.storyboard */; };
+		B1F4F55B2A0562A400D7C6A1 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F4F5592A0562A400D7C6A1 /* ListTableViewCell.swift */; };
+		B1F4F55C2A0562A400D7C6A1 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1F4F55A2A0562A400D7C6A1 /* ListTableViewCell.xib */; };
+		B1F4F5602A0562BF00D7C6A1 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F4F55F2A0562BF00D7C6A1 /* ListViewModel.swift */; };
+		B1F4F5622A0562C900D7C6A1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F4F5612A0562C900D7C6A1 /* Person.swift */; };
+		B1F4F5642A0564A800D7C6A1 /* AddListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F4F5632A0564A800D7C6A1 /* AddListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B1F4F5412A055EE800D7C6A1 /* DesafioNotificationCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioNotificationCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F4F5442A055EE800D7C6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1F4F5462A055EE800D7C6A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B1F4F5482A055EE800D7C6A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B1F4F54B2A055EE800D7C6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1F4F54D2A055EEB00D7C6A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1F4F5502A055EEB00D7C6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1F4F5522A055EEB00D7C6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F4F5592A0562A400D7C6A1 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		B1F4F55A2A0562A400D7C6A1 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		B1F4F55F2A0562BF00D7C6A1 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		B1F4F5612A0562C900D7C6A1 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		B1F4F5632A0564A800D7C6A1 /* AddListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1F4F53E2A055EE800D7C6A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1F4F5382A055EE800D7C6A1 = {
+			isa = PBXGroup;
+			children = (
+				B1F4F5432A055EE800D7C6A1 /* DesafioNotificationCenter */,
+				B1F4F5422A055EE800D7C6A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1F4F5422A055EE800D7C6A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1F4F5412A055EE800D7C6A1 /* DesafioNotificationCenter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1F4F5432A055EE800D7C6A1 /* DesafioNotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				B1F4F55D2A0562AA00D7C6A1 /* Model */,
+				B1F4F55E2A0562B000D7C6A1 /* ViewModel */,
+				B1F4F5582A05628E00D7C6A1 /* Cell */,
+				B1F4F5632A0564A800D7C6A1 /* AddListViewController.swift */,
+				B1F4F5482A055EE800D7C6A1 /* ViewController.swift */,
+				B1F4F54A2A055EE800D7C6A1 /* Main.storyboard */,
+				B1F4F5652A05679F00D7C6A1 /* Resources */,
+				B1F4F5522A055EEB00D7C6A1 /* Info.plist */,
+			);
+			path = DesafioNotificationCenter;
+			sourceTree = "<group>";
+		};
+		B1F4F5582A05628E00D7C6A1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B1F4F5592A0562A400D7C6A1 /* ListTableViewCell.swift */,
+				B1F4F55A2A0562A400D7C6A1 /* ListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B1F4F55D2A0562AA00D7C6A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1F4F5612A0562C900D7C6A1 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B1F4F55E2A0562B000D7C6A1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B1F4F55F2A0562BF00D7C6A1 /* ListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B1F4F5652A05679F00D7C6A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B1F4F54D2A055EEB00D7C6A1 /* Assets.xcassets */,
+				B1F4F54F2A055EEB00D7C6A1 /* LaunchScreen.storyboard */,
+				B1F4F5442A055EE800D7C6A1 /* AppDelegate.swift */,
+				B1F4F5462A055EE800D7C6A1 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1F4F5402A055EE800D7C6A1 /* DesafioNotificationCenter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1F4F5552A055EEB00D7C6A1 /* Build configuration list for PBXNativeTarget "DesafioNotificationCenter" */;
+			buildPhases = (
+				B1F4F53D2A055EE800D7C6A1 /* Sources */,
+				B1F4F53E2A055EE800D7C6A1 /* Frameworks */,
+				B1F4F53F2A055EE800D7C6A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesafioNotificationCenter;
+			productName = DesafioNotificationCenter;
+			productReference = B1F4F5412A055EE800D7C6A1 /* DesafioNotificationCenter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1F4F5392A055EE800D7C6A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B1F4F5402A055EE800D7C6A1 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = B1F4F53C2A055EE800D7C6A1 /* Build configuration list for PBXProject "DesafioNotificationCenter" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1F4F5382A055EE800D7C6A1;
+			productRefGroup = B1F4F5422A055EE800D7C6A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1F4F5402A055EE800D7C6A1 /* DesafioNotificationCenter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1F4F53F2A055EE800D7C6A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F4F5512A055EEB00D7C6A1 /* LaunchScreen.storyboard in Resources */,
+				B1F4F55C2A0562A400D7C6A1 /* ListTableViewCell.xib in Resources */,
+				B1F4F54E2A055EEB00D7C6A1 /* Assets.xcassets in Resources */,
+				B1F4F54C2A055EE800D7C6A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1F4F53D2A055EE800D7C6A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F4F5622A0562C900D7C6A1 /* Person.swift in Sources */,
+				B1F4F5602A0562BF00D7C6A1 /* ListViewModel.swift in Sources */,
+				B1F4F5642A0564A800D7C6A1 /* AddListViewController.swift in Sources */,
+				B1F4F5492A055EE800D7C6A1 /* ViewController.swift in Sources */,
+				B1F4F55B2A0562A400D7C6A1 /* ListTableViewCell.swift in Sources */,
+				B1F4F5452A055EE800D7C6A1 /* AppDelegate.swift in Sources */,
+				B1F4F5472A055EE800D7C6A1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B1F4F54A2A055EE800D7C6A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1F4F54B2A055EE800D7C6A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1F4F54F2A055EEB00D7C6A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1F4F5502A055EEB00D7C6A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1F4F5532A055EEB00D7C6A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1F4F5542A055EEB00D7C6A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1F4F5562A055EEB00D7C6A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZJ6WN3W475;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DesafioNotificationCenter/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Leo-Lacerda.DesafioNotificationCenter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1F4F5572A055EEB00D7C6A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZJ6WN3W475;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DesafioNotificationCenter/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Leo-Lacerda.DesafioNotificationCenter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1F4F53C2A055EE800D7C6A1 /* Build configuration list for PBXProject "DesafioNotificationCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1F4F5532A055EEB00D7C6A1 /* Debug */,
+				B1F4F5542A055EEB00D7C6A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1F4F5552A055EEB00D7C6A1 /* Build configuration list for PBXNativeTarget "DesafioNotificationCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1F4F5562A055EEB00D7C6A1 /* Debug */,
+				B1F4F5572A055EEB00D7C6A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1F4F5392A055EE800D7C6A1 /* Project object */;
+}
