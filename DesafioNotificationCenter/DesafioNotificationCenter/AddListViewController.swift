@@ -30,6 +30,12 @@ class AddListViewController: UIViewController {
             let okButton = UIAlertAction(title: "OK", style: .default) { action in}
             alertController.addAction(okButton)
             present(alertController, animated: true)
+        }else{
+            let alertController = UIAlertController(title: "O campo de nome não pode estar vazio!", message: nil, preferredStyle: .alert)
+            
+            let okButton = UIAlertAction(title: "OK", style: .default) { action in}
+            alertController.addAction(okButton)
+            present(alertController, animated: true)
         }
     }
 }
