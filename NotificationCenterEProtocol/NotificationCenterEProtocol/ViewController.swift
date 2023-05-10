@@ -42,8 +42,29 @@ class ViewController: UIViewController {
     @IBAction func pressedChooseButton(_ sender: UIButton) {
         let vc: SelectionViewController? = UIStoryboard(name: "SelectionViewController", bundle: nil).instantiateViewController(withIdentifier: "SelectionViewController") as? SelectionViewController
         vc?.modalPresentationStyle = .fullScreen
+        // Assinar o protocolo!! OBRIGATÓRIO
+        vc?.delegate = self
         present(vc ?? UIViewController(), animated: true)
         
     }
 }
 
+extension ViewController: SelectionViewControllerProtocol{
+    func teste(nome: String) {
+        print(nome)
+    }
+    
+    func tappedMacBook() {
+        print(#function)
+        customImageView.image = UIImage(named: "imac_pro")
+        customLabel.text = "Imac das Galaxias"
+        view.backgroundColor = .red
+    }
+    
+    func tappediMac() {
+        print(#function)
+        customImageView.image = UIImage(named: "imac_pro")
+        customLabel.text = "Imac das Galaxias"
+        view.backgroundColor = .cyan
+    }
+}
