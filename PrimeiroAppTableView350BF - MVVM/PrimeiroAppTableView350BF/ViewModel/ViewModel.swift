@@ -9,10 +9,10 @@ import UIKit
 
 class ViewModel: NSObject {
     
-    private var personList: [Person] = [Person(name: "Barbara", surname: "Teste 1"),
-                                Person(name: "Bernardo", surname: "2"),
-                                Person(name: "Bruno", surname: "3"),
-                                Person(name: "Douglas", surname: "4"),
+    private var personList: [Person] = [Person(name: "Barbara", surname: "Helen"),
+                                Person(name: "Bernardo", surname: "Guimarães"),
+                                Person(name: "Bruno", surname: "Moura"),
+                                Person(name: "Douglas", surname: "Stadulni"),
                                 Person(name: "Leo", surname: "Lacerda")
     ]
     
@@ -31,4 +31,9 @@ class ViewModel: NSObject {
     func loadCurrentPerson(indexPath: IndexPath) -> Person{
         return personList[indexPath.row]
     }
+    
+    func getName(indexPath: IndexPath) -> String{
+        return personList[indexPath.row].name
+    }
+    
 }

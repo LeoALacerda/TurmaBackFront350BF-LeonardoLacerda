@@ -66,6 +66,10 @@ extension ViewController: UITableViewDataSource{
 // DELEGATE -> Responsável pela INTERAÇÃO do usuário
 extension ViewController: UITableViewDelegate{
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(viewModel.getName(indexPath: indexPath))
+    }
+    
 }
 
 
