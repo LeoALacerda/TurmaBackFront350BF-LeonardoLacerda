@@ -15,8 +15,9 @@ import UIKit
 //3o Criar elemento (NÃO SE ESQUEÇA DO translatesAutoresizingMaskIntoConstraints)
 //4o Adicionar elemento
 //5o Configurar constraints
-//6o Chamar view na loadView
-//7o Correr para o abraço!
+//6o Verificar se o addElements e o configConstraints estão sendo chamados no construtor
+//7o Chamar view na loadView
+//8o Correr para o abraço!
 
 class LoginScreen: UIView {
     
@@ -29,7 +30,28 @@ class LoginScreen: UIView {
         return label
     }()
     
+    lazy var emailTextField: UITextField = {
+        let tf = UITextField()
+        tf.translatesAutoresizingMaskIntoConstraints = false
+        tf.placeholder = "Digite seu email:"
+    //Desativar autocorreção
+        tf.autocorrectionType = .no
+        tf.borderStyle = .roundedRect
+        tf.keyboardType = .emailAddress
+        return tf
+    }()
     
+    lazy var passwordTextField: UITextField = {
+        let tf = UITextField()
+        tf.translatesAutoresizingMaskIntoConstraints = false
+        tf.placeholder = "Digite sua senha:"
+    //Desativar autocorreção
+        tf.autocorrectionType = .no
+        tf.borderStyle = .roundedRect
+        tf.keyboardType = .default
+        tf.isSecureTextEntry = true
+        return tf
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -45,15 +67,34 @@ class LoginScreen: UIView {
     
     private func addElements(){
         addSubview(loginLabel)
+        addSubview(emailTextField)
+        addSubview(passwordTextField)
     }
     
     private func configConstraints(){
         NSLayoutConstraint.activate([
             
-            loginLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 20),
-            loginLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            loginLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20),
+            loginLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             
+            emailTextField.topAnchor.constraint(equalTo: loginLabel.bottomAnchor, constant: 10),
+            emailTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            emailTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+            emailTextField.heightAnchor.constraint(equalToConstant: 45),
             
+            //Abordagem sem referência:
+            
+//            passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 10),
+//            passwordTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+//            passwordTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+//            passwordTextField.heightAnchor.constraint(equalToConstant: 45),
+            
+            //Abordagem com referência:
+            
+            passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 10),
+            passwordTextField.leadingAnchor.constraint(equalTo: emailTextField.leadingAnchor),
+            passwordTextField.trailingAnchor.constraint(equalTo: emailTextField.trailingAnchor),
+            passwordTextField.heightAnchor.constraint(equalTo: emailTextField.heightAnchor),
         ])
     }
     
