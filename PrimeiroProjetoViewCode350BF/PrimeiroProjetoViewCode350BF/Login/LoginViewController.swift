@@ -20,4 +20,3 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
     }
 }
-
