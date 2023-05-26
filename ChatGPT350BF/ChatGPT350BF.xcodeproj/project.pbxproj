@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		B10837542A0DA6D300D41C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10837532A0DA6D300D41C4B /* AppDelegate.swift */; };
 		B10837562A0DA6D300D41C4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10837552A0DA6D300D41C4B /* SceneDelegate.swift */; };
-		B10837582A0DA6D300D41C4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10837572A0DA6D300D41C4B /* ViewController.swift */; };
-		B108375B2A0DA6D300D41C4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10837592A0DA6D300D41C4B /* Main.storyboard */; };
+		B10837582A0DA6D300D41C4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10837572A0DA6D300D41C4B /* HomeViewController.swift */; };
 		B108375D2A0DA6D600D41C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B108375C2A0DA6D600D41C4B /* Assets.xcassets */; };
 		B10837602A0DA6D600D41C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B108375E2A0DA6D600D41C4B /* LaunchScreen.storyboard */; };
+		B1F76F672A20198D00BE41F5 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F76F662A20198D00BE41F5 /* HomeScreen.swift */; };
+		B1F76F6B2A203CCA00BE41F5 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F76F6A2A203CCA00BE41F5 /* UIColor+Extension.swift */; };
+		B1F76F6F2A2042C400BE41F5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F76F6E2A2042C400BE41F5 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B10837502A0DA6D300D41C4B /* ChatGPT350BF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPT350BF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10837532A0DA6D300D41C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B10837552A0DA6D300D41C4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B10837572A0DA6D300D41C4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B108375A2A0DA6D300D41C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B10837572A0DA6D300D41C4B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B108375C2A0DA6D600D41C4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B108375F2A0DA6D600D41C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B10837612A0DA6D600D41C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F76F662A20198D00BE41F5 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		B1F76F6A2A203CCA00BE41F5 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		B1F76F6E2A2042C400BE41F5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,50 @@
 		B10837522A0DA6D300D41C4B /* ChatGPT350BF */ = {
 			isa = PBXGroup;
 			children = (
+				B1F76F682A203CA100BE41F5 /* Utils */,
+				B1F76F642A20194A00BE41F5 /* Home */,
 				B10837532A0DA6D300D41C4B /* AppDelegate.swift */,
 				B10837552A0DA6D300D41C4B /* SceneDelegate.swift */,
-				B10837572A0DA6D300D41C4B /* ViewController.swift */,
-				B10837592A0DA6D300D41C4B /* Main.storyboard */,
 				B108375C2A0DA6D600D41C4B /* Assets.xcassets */,
 				B108375E2A0DA6D600D41C4B /* LaunchScreen.storyboard */,
 				B10837612A0DA6D600D41C4B /* Info.plist */,
 			);
 			path = ChatGPT350BF;
+			sourceTree = "<group>";
+		};
+		B1F76F642A20194A00BE41F5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B10837572A0DA6D300D41C4B /* HomeViewController.swift */,
+				B1F76F652A20195A00BE41F5 /* Screen */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B1F76F652A20195A00BE41F5 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				B1F76F662A20198D00BE41F5 /* HomeScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		B1F76F682A203CA100BE41F5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B1F76F692A203CAE00BE41F5 /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B1F76F692A203CAE00BE41F5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B1F76F6A2A203CCA00BE41F5 /* UIColor+Extension.swift */,
+				B1F76F6E2A2042C400BE41F5 /* UIViewController+Extension.swift */,
+			);
+			name = Extension;
+			path = ../Util/Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +166,6 @@
 			files = (
 				B10837602A0DA6D600D41C4B /* LaunchScreen.storyboard in Resources */,
 				B108375D2A0DA6D600D41C4B /* Assets.xcassets in Resources */,
-				B108375B2A0DA6D300D41C4B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +176,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B10837582A0DA6D300D41C4B /* ViewController.swift in Sources */,
+				B1F76F6F2A2042C400BE41F5 /* UIViewController+Extension.swift in Sources */,
+				B1F76F672A20198D00BE41F5 /* HomeScreen.swift in Sources */,
+				B10837582A0DA6D300D41C4B /* HomeViewController.swift in Sources */,
 				B10837542A0DA6D300D41C4B /* AppDelegate.swift in Sources */,
 				B10837562A0DA6D300D41C4B /* SceneDelegate.swift in Sources */,
+				B1F76F6B2A203CCA00BE41F5 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B10837592A0DA6D300D41C4B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B108375A2A0DA6D300D41C4B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B108375E2A0DA6D600D41C4B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +325,7 @@
 				INFOPLIST_FILE = ChatGPT350BF/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +353,7 @@
 				INFOPLIST_FILE = ChatGPT350BF/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
