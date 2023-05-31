@@ -19,9 +19,11 @@ class HomeScreen: UIView {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.separatorStyle = .none
-        tableView.backgroundColor = .white
-        #warning("Registrar células")
-        
+        tableView.backgroundColor = .background
+        //  no ViewCode a celula nao tem .nib, pois os elementos sao adicionados na propria classe TableViewCell. Entao usamos o TableViewCell.self
+        tableView.register(OutgoingTextTableViewCell.self, forCellReuseIdentifier: OutgoingTextTableViewCell.identifier)
+        tableView.register(IncomingTextTableViewCell.self, forCellReuseIdentifier: IncomingTextTableViewCell.identifier)
+        tableView.transform = CGAffineTransform(scaleX: 1, y: -1)
         return tableView
     }()
     
@@ -69,6 +71,9 @@ class HomeScreen: UIView {
     
         @objc func tappedSendButton(_ sender: UIButton){
             delegate?.sendMessage(text: messageTextField.text ?? "")
+            tableView.reloadData()
+            messageTextField.text = ""
+            sendButton.isEnabled = false
         }
     
     override init(frame: CGRect) {
@@ -129,8 +134,8 @@ class HomeScreen: UIView {
 extension HomeScreen: UITextFieldDelegate{
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let text = textField.text as NSString? else {return false}
-        let updateText = text.replacingCharacters(in: range, with: text as String)
-        if updateText.isEmpty{
+        let updateText = text.replacingCharacters(in: range, with: string)
+        if updateText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
             sendButton.isEnabled = false
         }else{
             sendButton.isEnabled = true

@@ -10,6 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     var screen: HomeScreen?
+    var viewModel: HomeViewModel = HomeViewModel()
     
     override func loadView() {
         screen = HomeScreen()
@@ -29,22 +30,37 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        0
+        viewModel.numberOfRowsInSection
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        UITableViewCell()
+        
+        let model = viewModel.loadCurrentMessage(indexPath: indexPath)
+        
+        switch model.typeMessage{
+        case .user:
+            let cell = tableView.dequeueReusableCell(withIdentifier: OutgoingTextTableViewCell.identifier, for: indexPath) as? OutgoingTextTableViewCell
+            cell?.setupCell(message: model.message)
+            return cell ?? UITableViewCell()
+        case .chatGPT:
+            let cell = tableView.dequeueReusableCell(withIdentifier: IncomingTextTableViewCell.identifier, for: indexPath) as? IncomingTextTableViewCell
+            cell?.setupCell(message: model.message)
+            return cell ?? UITableViewCell()
+//        default:
+//            return UITableViewCell()
+        }
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        0
+        return viewModel.heightForRowAt(indexPath: indexPath)
     }
 }
 
 extension HomeViewController: HomeScreenProtocol{
     func sendMessage(text: String) {
-        print(text)
+        viewModel.addMessage(message: text)
     }
     
 }
