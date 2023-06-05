@@ -71,7 +71,6 @@ class HomeScreen: UIView {
     
         @objc func tappedSendButton(_ sender: UIButton){
             delegate?.sendMessage(text: messageTextField.text ?? "")
-            tableView.reloadData()
             messageTextField.text = ""
             sendButton.isEnabled = false
         }
@@ -142,4 +141,13 @@ extension HomeScreen: UITextFieldDelegate{
         }
         return true
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
+    
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        self.tableView.endEditing(true)
+//        self.contentView.endEditing(true)
+//    }
 }

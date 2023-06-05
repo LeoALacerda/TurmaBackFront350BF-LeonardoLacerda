@@ -22,6 +22,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.delegate(delegate: self)
         screen?.delegate = self
         screen?.configTableViewProtocols(delegate: self, dataSource: self)
     }
@@ -60,7 +61,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
 
 extension HomeViewController: HomeScreenProtocol{
     func sendMessage(text: String) {
-        viewModel.addMessage(message: text)
+        viewModel.fetchMessage(message: text)
+        screen?.tableView.reloadData()
     }
     
+}
+
+extension HomeViewController: HomeViewModelProtocol{
+    func reloadTableView() {
+        self.screen?.tableView.reloadData()
+    }
 }
